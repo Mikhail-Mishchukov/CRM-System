@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="preload" href="fonts/OpenSansBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSansRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSansSemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/tippy.css">
+    <link rel="stylesheet" href="style/choices.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/content.css">
+
+    <script defer src="script/choices.min.js"></script>
+    <script defer src="script/inputmask.min.js"></script>
+    <script defer src="script/popper.js"></script>
+    <script defer src="script/tippy.js"></script>
+
+    <script defer src="script/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <img src="img/logo.png" alt="Логотип Skillbus" class="header__logo">
+            <input type="text" class="header__input" placeholder="Введите запрос">
+            <ul class="container__auto-hints">
+
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section class="table">
+            <div class="container">
+                <h2 class="content__title">Клиенты</h2>
+                <div class="table-container">
+                    <table class="content_table">
+                        <thead>
+                            <tr>
+                                <th class="table__cell-headers table__cell-headers-ID">
+                                    <button class="sort sort-id">ID</button>
+                                </th>
+                                <th class="table__cell-headers table__cell-headers-FIO">
+                                    <button class="sort sort-FIO">Фамилия Имя Отчество</button>
+                                </th>
+                                <th class="table__cell-headers table__cell-headers-time-create">
+                                    <button class="sort sort-create">Дата и время создания</button>
+                                </th>
+                                <th class="table__cell-headers table__cell-headers-time-chenge">
+                                    <button class="sort sort-change">Последние изменения</button>
+                                </th>
+                                <th class="table__cell-headers table__cell-headers-contacts">Контакты</th>
+                                <th class="table__cell-headers table__cell-headers-actions">Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+
+                        </tbody>
+                    </table>
+                </div>
+                <button class="content__add-btn">Добавить клиента</button>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
